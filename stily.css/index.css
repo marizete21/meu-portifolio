@@ -1,0 +1,153 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    box-sizing: border-box;
+    background-color:#FFE6E6;
+
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalhos_menu{
+    display: flex;
+    gap: 80px;
+}
+.cab_home{
+    font-family:"Signika Negative", sans-serif;
+    font-size: 1.5rem;
+    color:#86469C;
+    border-radius: 24px;
+    width: 180px;
+    border-radius: 16px;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    border: 4px solid #FB9AD1;
+}
+.meu_nome{
+    color: #7469B6;
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex; 
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 75px;
+}
+.apresentacao_texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+
+.apresentacao_titulo_{
+    font-size: 2.5rem;
+    font-family: "Lobster", sans-serif;
+    color: #7469B6;
+}
+.paragrafo_texto{
+    font-size: 1.43rem;
+    font-family: "Signika Negative", sans-serif;
+}
+.botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.titulo_redes{
+    font-family:"Signika Negative", sans-serif;
+    font-weight: 440px;
+    color: #7469B6;
+    font-size: 1.5rem;
+}
+.botao_link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    border-radius: 24px;
+    font-size: 1.8rem;
+    padding: 15px 0;
+    text-decoration: none;
+    color: #86469C;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    border: 4px solid #FB9AD1 ;
+    margin: 5px 0px;
+}
+
+.botao_link:hover{
+    background-color: #E1AFD1;
+}
+.cab_home:hover{
+background-color: #E1AFD1;
+}
+ 
+
+.rodape{
+    padding: 24px;
+    color: #86469C;
+    background-color: #E1AFD1;
+    text-align: center;
+    font-family: "Signika Negative", sans-serif ;
+    font-size: 24px;
+    font-weight: 400px;
+}
+
+#nome-maria::after{
+    content:  "|";
+    animation: piscar 0.50s infinite;
+}
+
+@keyframes piscar {
+    0%{
+    opacity: 0;
+
+    }
+
+    50%{
+        opacity: 1;
+
+    }
+    
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+.maria_foto{
+    width: 50%;
+}
+
+@media (max-width: 1100px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+
+    }
+    .cabecalhos_menu{
+        justify-content: center;
+        padding: 5%;
+    }
+    .apresentacao_texto{
+        width: auto;
+    }
+}

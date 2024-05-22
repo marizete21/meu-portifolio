@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+
+*{ 
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    box-sizing: border-box;
+    background-color:#FFE6E6;
+
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalhos_menu{
+    display: flex;
+    gap: 80px;
+}
+.cab_proj{
+    font-family:"Signika Negative", sans-serif;
+    font-size: 1.5rem;
+    color:#86469C;
+    border-radius: 25px;
+    width: 180px;
+    border-radius: 16px;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    border: 4px solid #FB9AD1;
+}
+.meu_nome{
+    color: #7469B6;
+}
+.apresentacao{
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: column; 
+    gap:34px;
+    margin:3%;
+}
+.apresentacao_texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.apresentacao_titulo_{
+    font-size: 2.5rem;
+    font-family: "Lobster", sans-serif;
+}
+.paragrafo_texto{
+    font-size: 1.43rem;
+    font-family: "Signika Negative", sans-serif;
+}
+.cab_proj:hover{
+    background-color: #E1AFD1;
+}
+.botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 34px;
+}
+.rodape{
+    padding: 24px;
+    color: #86469C;
+    background-color: #E1AFD1;
+    text-align: center;
+    font-family: "Signika Negative", sans-serif ;
+    font-size: 1.5rem;
+    font-weight: 400px;
+}
+.imagem_form{
+    height: 350px;
+    width: 620px;
+}
+.imagem{
+    display: flex;
+    justify-content:space-evenly;
+    gap: 450%;
+    width: 50px;
+}
+
+.texto1{
+    font-size: 1.43rem;
+    font-family: "Signika Negative", sans-serif;
+
+}
+
+.texto__parag{
+    gap: 450%;
+    text-align: left;
+}
+.texto__m{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10rem;
+    
+}
+
+@media (max-width: 800px){
+    .texto__m{
+        flex-direction: column-reverse;
+    }
+    .cabecalhos_menu{
+        justify-content: center;
+        padding: 5%;
+    }
+    .apresentacao_texto{
+        width: auto;
+    }
+}
